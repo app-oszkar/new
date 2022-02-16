@@ -4,13 +4,9 @@ subtitle: new test
 email: your-email@domain.com
 description: Test
 baseurl: ""
-url: "https://app-oszkar.github.io/new/"
+url: "https://app-oszkar.github.io/new"
 locale: en
 github_username:  KiwiChat
 
 # Build settings
 markdown: kramdown
-
-staticman:
-  api: "https://api.staticman.ml/v3/entry/github/app-oszkar/new/master/comments"
-  path: "_data/comments/test-slug"

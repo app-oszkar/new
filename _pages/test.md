@@ -1,5 +1,5 @@
 ---
 title: "test"
-layout: null
+layout: default
 permalink: /test
 ---

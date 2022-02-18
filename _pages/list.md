@@ -1,8 +1,8 @@
 ---
 title: "List"
 layout: new
-permalink: /list
+permalink: /subdomain-list
 ---
 <div class="center">
-{% include comments.html %}
+{% include subdomain-list.html %}
 </div>

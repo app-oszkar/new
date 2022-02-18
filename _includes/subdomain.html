@@ -28,10 +28,10 @@
                              
                                                          <div class="row">
                                     <div class="col-md-6">
-                                        <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Please enter your email *" required="required" data-error="Valid email is required."> </div>
+                                        <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="fields[email]" class="form-control" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Please enter your email *" required="required" data-error="Valid email is required."> </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group"> <label for="form_lastname">WebSite *</label> <input id="website" type="text" name="website" class="form-control" placeholder="Please enter your website *" required="required" data-error="Lastname is required."> </div>
+                                        <div class="form-group"> <label for="form_lastname">WebSite *</label> <input id="website" type="text" name="fields[website]" class="form-control" placeholder="Please enter your website *" required="required" data-error="Lastname is required."> </div>
                                     </div>
                                 </div>
                              
@@ -40,10 +40,10 @@
                              
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="form-group"> <label for="form_subdomain">SubDomain *</label> <input id="subdomain" type="subdomain" name="subdomain" class="form-control" placeholder="Please enter your subdomain *" required="required" data-error="Valid subdomain is required."> </div>
+                                        <div class="form-group"> <label for="form_subdomain">SubDomain *</label> <input id="subdomain" type="subdomain" name="fields[subdomain]" class="form-control" placeholder="Please enter your subdomain *" required="required" data-error="Valid subdomain is required."> </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group"> <label for="form_need">Please specify your need *</label> <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your record.">
+                                        <div class="form-group"> <label for="form_need">Please specify your need *</label> <select id="form_need" name="fields[record]" class="form-control" required="required" data-error="Please specify your record.">
                                                 <option value="" selected disabled>--Select Your Record--</option>
                                                 <option>CNAME</option>
                                                 <option>NS</option>
@@ -54,7 +54,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="form-group"> <label for="form_message">Message *</label> <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea> </div>
+                                        <div class="form-group"> <label for="form_message">Message *</label> <textarea id="form_message" name="fields[message]" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea> </div>
                                     </div>
                                   <input name="options[redirect]" type="hidden" value="https://devto.ml/list" />
                                  <input name="options[domain]" type="hidden" value="devto.ml">

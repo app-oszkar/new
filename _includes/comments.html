@@ -1,6 +1,6 @@
 <div class="comments">
   <h3>SubDomain List</h3>
-  {% assign comments = site.data.comments.test-slug | sort %}
+  {% assign comments = site.data.comments.request | sort %}
   {% for comment in comments reversed %}
     {% assign commentData = comment[1] %}
     <article class="comment">

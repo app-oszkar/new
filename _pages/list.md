@@ -1,6 +1,6 @@
 ---
 title: "List"
-layout: new
+layout: test
 permalink: /list
 ---
 

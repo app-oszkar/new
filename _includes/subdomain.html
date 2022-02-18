@@ -10,7 +10,7 @@
  
 				
                   <form method="POST" action="{{ site.staticman.api }}">
-                       <input name="options[slug]" type="hidden" value="test-slug">
+                       <input name="options[slug]" type="hidden" value="request">
                        <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
 					
 					
@@ -69,7 +69,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group"> <label for="form_message">Message *</label> <textarea id="form_message" name="fields[message]" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea> </div>
                                     </div>
-                                  <input name="options[redirect]" type="hidden" value="https://devto.ml/list" />
+                                  <input name="options[redirect]" type="hidden" value="{{ page.url  }}/lis">
                                  <input name="fields[devto]" type="hidden" value="devto.ml">
                                 
 					

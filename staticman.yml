@@ -8,7 +8,7 @@ comments:
   # (*) OPTIONAL?
   commitMessage: "New Subdomain from {fields.name} at {fields.url}"
   format: "json"
-  allowedOrigins: ["app-oszkar.github.io"]
+  allowedOrigins: ["https://app-oszkar.github.io/new/test"]
   bannedDomains: ["https://bit.ly"]
   generatedFields:
     date:

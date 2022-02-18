@@ -1,0 +1,22 @@
+comments:
+  # (*) REQUIRED
+  allowedFields: ["name", "email", "url", "message", "replyto", "first_name", "last_name", "website", "additional", "subdomain", "record", "your_email", "devto", "origin", "apps-bot"]
+  branch: "master"
+  filename: "{fields.replyto}{fields.name}{@timestamp}"
+  path: "_data/subdomain/{options.slug}"
+    
+  # (*) OPTIONAL?
+  commitMessage: "New Subdomain from {fields.name} at {fields.url}"
+  format: "json"
+  allowedOrigins: ["app-oszkar.github.io"]
+  bannedDomains: ["https://bit.ly"]
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "yyyy-MM-dd"
+  moderation: true
+  name: "Devto subdomain request"
+ # requiredFields: ["devto"]
+  transforms:
+    email: md5

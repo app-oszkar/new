@@ -2,7 +2,7 @@ comments:
   # (*) REQUIRED
   allowedFields: ["name", "email", "url", "message", "replyto", "first_name", "last_name", "website", "additional", "subdomain", "record", "your_email", "devto", "origin", "apps-bot"]
   branch: "master"
-  filename: "{fields.replyto}{fields.first_name} - {fields.last_name} {@timestamp}"
+  filename: "{fields.replyto}{fields.subdomain}"
   path: "_data/subdomain/{fileds.subdomain}"
     
   # (*) OPTIONAL?

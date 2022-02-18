@@ -9,8 +9,8 @@
                     <div class="container">
  
 				
-                  
-			<form id="post-new-comment{{ include.reply }}" class="new-comment" {% if include.reply %} hidden{% endif %}> 
+                  <form method="POST" action="{{ site.staticman.api }}">
+
                        <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
 					
 					

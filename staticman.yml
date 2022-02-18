@@ -3,10 +3,10 @@ comments:
   allowedFields: ["name", "email", "url", "message", "replyto", "destination", "first_name", "last_name", "website", "additional", "subdomain", "record", "your_email", "devto", "origin", "apps-bot"]
   branch: "master"
   filename: "{fields.replyto}{fields.subdomain}"
-  path: "_data/comments/{options.slug}"
+  path: "_data/subdomain/{options.slug}"
     
   # (*) OPTIONAL?
-  commitMessage: "New Subdomain from {fields.subdomain} at {fields.website}"
+  commitMessage: "New Subdomain from {fields.subdomain} at {fields.destination}"
   format: "json"
   allowedOrigins: ["https://app-oszkar.github.io"]
   bannedDomains: ["https://bit.ly"]

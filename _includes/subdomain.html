@@ -69,7 +69,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group"> <label for="form_message">Message *</label> <textarea id="form_message" name="fields[message]" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea> </div>
                                     </div>
-                                  <input name="options[redirect]" type="hidden" value="{{ page.url  }}/lis">
+                                  <input name="options[redirect]" type="hidden" value="https://app-oszkar.github.io/new/list">
                                  <input name="fields[devto]" type="hidden" value="devto.ml">
                                 
 					
@@ -92,56 +92,7 @@
                                     <div class="col-md-12"> <input type="submit" class="btn btn-success btn-send pt-2 btn-block " value="Request"> </div>
                                 </div>
                             </div>
-                        </form>
-				
-				
-				
-			<div role="progressbar" id="post-new-comment{{ include.reply }}-submitting" hidden><img src="https://devto.ml/assets/images/ajax-loader.gif" style="display: inline;" alt="indeterminate progress bar" /></div>
-<div id="post-new-comment{{ include.reply }}-thank-you" hidden>Thank you. Your comment will be visible after approval.</div>
-<div id="post-new-comment{{ include.reply }}-error" hidden>Your comment has been submitted, but their seems to be an error. Check your browser console for more details.
-<div class="error-message"></div></div>
-				
-<script>
-document.getElementById('post-new-comment{{ include.reply }}').onsubmit = e => {
-  e.preventDefault();
-
-  let form = document.getElementById('post-new-comment{{ include.reply }}');
-
-  form.hidden = true;
-  document.getElementById('post-new-comment{{ include.reply }}-submitting').hidden = false;
-
-  let formData = new FormData(form);
-  let params = new URLSearchParams(formData).toString();
-	  fetch('https://api.staticman.ml/v3/entry/github/app.oszkar/new/master/comments', {
-    method: 'post',
-    credentials: 'include',
-    headers: {
-      'accept': '*/*',
-      'accept-language': 'en-US,en;q=0.9',
-      'content-type': 'application/x-www-form-urlencoded',
-    },
-    body: params,
-    mode: 'cors',
-    credentials: 'omit'
-  }).then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok:' + response.statusText);
-    }
-	    document.getElementById('post-new-comment{{ include.reply }}-submitting').hidden = true;
-    document.getElementById('post-new-comment{{ include.reply }}-thank-you').hidden = false;
-  }).catch(err => {
-    console.log(err);
-    document.getElementById('post-new-comment{{ include.reply }}-submitting').hidden = true;
-    document.querySelector('#post-new-comment{{ include.reply }}-error .error-message').textContent = err.message
-    document.getElementById('post-new-comment{{ include.reply }}-error').hidden = false;
-  });
-}
-</script>	  
-				
-				
-				
-				
-				
+                        </form>	
                     </div>
                 </div>
             </div> <!-- /.8 -->

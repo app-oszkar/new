@@ -31,4 +31,4 @@ plugins:
 staticman:
   api: "https://api.staticman.ml/v3/entry/github/app-oszkar/new/master/comments"  
 #  path: "_data/subdomain/{fileds.subdomain}"
-  path: "_data/comments/request"
+  path: "_data/subdomain/request"

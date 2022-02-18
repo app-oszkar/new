@@ -2,11 +2,11 @@ comments:
   # (*) REQUIRED
   allowedFields: ["name", "email", "url", "message", "replyto", "first_name", "last_name", "website", "additional", "subdomain", "record", "your_email", "devto", "origin", "apps-bot"]
   branch: "master"
-  filename: "{fields.replyto}{fields.name}{@timestamp}"
-  path: "_data/subdomain/{options.slug}"
+  filename: "{fields.replyto}{fields.first_name} - {fields.last_name} {@timestamp}"
+  path: "_data/subdomain/{fileds.subdomain}"
     
   # (*) OPTIONAL?
-  commitMessage: "New Subdomain from {fields.name} at {fields.url}"
+  commitMessage: "New Subdomain from {fields.subdomain} at {fields.website}"
   format: "json"
   allowedOrigins: ["https://app-oszkar.github.io"]
   bannedDomains: ["https://bit.ly"]

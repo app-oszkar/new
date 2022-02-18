@@ -31,3 +31,9 @@ label {
   text-align: center;
   border: 3px solid green;
 }
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}

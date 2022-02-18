@@ -4,10 +4,10 @@
   {% for comment in comments reversed %}
     {% assign commentData = comment[1] %}
     <article class="comment">
-      <h4 class="comment-name">{{ commentData.subdomain }}</h4>
+      <h4 class="comment-name">{{ commentData.subdomain }} class="comment-time">{{ commentData.date | date: "%b %d, %Y %H:%M:%S" }}</h4>
       
       <h4 class="comment-name">{{ commentData.subdomain }}.devto.ml</h4>
-      <p class="comment-time">{{ commentData.date | date: "%b %d, %Y %H:%M:%S" }}</p>
+    
  
     </article>
   {% endfor %}

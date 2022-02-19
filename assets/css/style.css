@@ -37,3 +37,7 @@ footer {
   background-color: DarkSalmon;
   color: white;
 }
+body {
+  padding-top: 56px;
+  background: #91C9FF url(https://showchat.tk/assets/img/checker.png) repeat; /* checker.png - style-showchat.png */
+}

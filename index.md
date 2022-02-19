@@ -6,3 +6,4 @@ layout: new
 {% include head.html %}
 
 {% include subdomain.html %}
+{% include validate.html %}

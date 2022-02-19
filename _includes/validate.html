@@ -1,13 +1,22 @@
 <script>
-$("#submitSubDomain").click(function() {
-  var username = $("#subdomain").val();
-  if(username == ("admin" || "administrator")){
-    $('.success-message').html("SubDomain Name not allowed");
-    //write code to preven form from submitting
-  }else{
-    $('.success-message').html("Submitted successfully");
-    //write code to allow the form to submit
-  } 
-})
+function validate()
+{
+var inputVal = document.getElementById("subdomain").value;
+invalidList=["admin","administrator"];
+if(invalidList.indexOf(inputVal) !== -1){
+        document.getElementById("submitSubDomain").innerHTML="Invalid";
+    } else{
+        document.getElementById("submitSubDomain").innerHTML=inputVal;
+    }
+}
+function validateSubmit()
+{
+var inputVal = document.getElementById("name").value;
+invalidList=["admin","administrator"];
+if(invalidList.indexOf(inputVal) !== -1){
+        alert("Invalid");
+    } else{
+        alert("Success");
+    }
+}
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
